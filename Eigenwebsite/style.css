@@ -1,0 +1,57 @@
+body {
+	background-image: url("bg_1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.content {
+	background-color: #333;
+	color: white;
+	margin: auto 5%;
+	box-shadow: 10px 10px 5px #1c9dfc;
+	border: solid 3px black;
+	height: 80%;
+	padding: 50px;
+	opacity: 0.9;
+}
+video {
+	display: block;
+}
+.inhoud {
+	display: block;
+}
+
+#tabel {
+	color: white;
+}
+#tabelth {
+	color: black;
+}
+#big {
+	font-size: 120pt;
+	text-align: center;
+	padding: 100px;
+}
+.content2 {
+	background-color: #333;
+	color: white;
+	opacity: 0.9;
+	box-shadow: 10px 10px 5px #1c9dfc;
+	border: solid 3px black;
+	font-family: 'Orbitron', sans-serif;
+}
+.text {
+	font-size: 14pt;
+}
+.motivatie {
+	font-size: 14pt;
+	padding-left: 20px;
+	padding-right: 250px;
+}
+.verzenden {
+	color: black;
+}
+#contact {
+	color: white;
+}
