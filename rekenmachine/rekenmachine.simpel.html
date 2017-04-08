@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="rekenmachine.simpel.css" type="text/css" />
+    <script type="text/javascript" src="rekenmachine.simpel.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <center id="alles">
+        <input id="invoerveld" placeholder="0" disabled="disabled"/>
+        <table id="table">
+            <tr>
+                <td><button onclick="faculteit()" class="normal_button">n !</button></td>
+                <td><button onclick="kwadraat()" class="normal_button">x^2</button></td>
+                <td><button onclick="tienkwadraat()" class="normal_button">10^x</button></td>
+                <td colspan="2"><button onclick="wrtl()" class="horizontal_button">&#8730;x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="invoer(7)" class="normal_button">7</button></td>
+                <td><button onclick="invoer(8)" class="normal_button">8</button></td>
+                <td><button onclick="invoer(9)" class="normal_button">9</button></td>
+                <td><button onclick="symbool('/')" class="normal_button">/</button></td>
+                <td><button onclick="terug()" class="normal_button">&larr;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="invoer(4)" class="normal_button">4</button></td>
+                <td><button onclick="invoer(5)" class="normal_button">5</button></td>
+                <td><button onclick="invoer(6)" class="normal_button">6</button></td>
+                <td><button onclick="symbool('*')" class="normal_button">*</button></td>
+                <td><button onclick="verwijder()" class="normal_button">C</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="invoer(1)" class="normal_button">1</button></td>
+                <td><button onclick="invoer(2)" class="normal_button">2</button></td>
+                <td><button onclick="invoer(3)" class="normal_button">3</button></td>
+                <td><button onclick="symbool('-')" class="normal_button">-</button></td>
+                <td rowspan="2"><button onclick="isgelijkaan()" class="vertical_button">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="invoer(0)" class="horizontal_button">0</button></td>
+                <td><button onclick="invoer('.')" class="normal_button">,</button></td>
+                <td><button onclick="symbool('+')" class="normal_button">+</button></td>
+            </tr>
+        </table>
+        
+
+        
+        
+        
+        </center>
+    
+</body>
+</html>
