@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boter, Kaas & Eieren</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<!--<div id="filter"></div>-->
+<div id="potje_titel">
+    <span id="potje">Game:</span>
+    <span id="potje_num"></span>
+</div>
+<div id="versus">
+    <span id="speler1_titel"></span>
+    <span id="vs">VS</span>
+    <span id="speler2_titel"></span>
+</div>
+<div id="popup">
+    <span id="span_speler1">Speler1(X):</span><input id="input_speler1" placeholder="Speler1" type="text" maxlength="8"/>
+    <span id="span_speler2">Speler2(O):</span><input id="input_speler2" placeholder="Speler2" type="text" maxlength="8"/>
+    <button id="popupbutton">Klaar</button>
+</div>
+<div id="scoreboard">
+    <span id="wins">Gewonnen</span>
+    <span id="loss">Verloren</span>
+    <span id="remises">Remises</span>
+    <span id="wins_speler1"></span>
+    <span id="wins_speler2"></span>
+    <span id="loss_speler1"></span>
+    <span id="loss_speler2"></span>
+    <span id="remise_speler1"></span>
+    <span id="remise_speler2"></span>
+    <span id="score_speler1"></span>
+    <span id="score_speler2"></span>
+    <button id="volgende_btn">Volgende Potje</button>
+    <button id="reset">Reset</button>
+</div>
+<div id="popupklein"></div>
+<div id="grotediv">
+    <img id="arrow_left" src="red-arrow-left.png"></img>
+    <img id="arrow_right" src="red-arrow-right.png"></img>
+    <span id="begin">Begin!</span>
+    <span id="remise">Remise!</span>
+    <span id="gewonnen"></span>
+    <table>
+        <tr>
+            <td id="vak1"></td>
+            <td id="vak2"></td>
+            <td id="vak3"></td>
+        </tr>
+        <tr>
+            <td id="vak4"></td>
+            <td id="vak5"></td>
+            <td id="vak6"></td>
+        </tr>
+        <tr>
+            <td id="vak7"></td>
+            <td id="vak8"></td>
+            <td id="vak9"></td>
+        </tr>
+    </table>
+    <div id="wrap">
+        <div id="pvp">PvP
+        </div>
+        
+        <div id="pve">PvE
+        <select id="selectpve">
+        <option value="makkelijk">makkelijk</option>
+        <option value="moeilijk">moeilijk</option>
+        </select>
+        </div>
+        <button disabled id="start">start</button>
+    </div>
+</div>
+    
+</body>
+</html>

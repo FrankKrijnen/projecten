@@ -1,0 +1,338 @@
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 500px;
+    height: 500px;
+    font-size: 120px;
+}
+table td {
+    height: 167px;
+    width: 167px;
+    border: 5px solid black;
+    text-align: center;
+    vertical-align:top ;
+    cursor: pointer;
+}
+table td:hover {
+    background-color: grey;
+}
+#pvp:hover, #pve:hover {
+    background-color: grey;
+}
+#selectpvp{
+    top: 150px;
+    left: 685px;
+    position: absolute;
+}
+#selectpve {
+    top: 450px;
+    left: 665px;
+    position: absolute;
+}
+#pvp {
+    cursor: pointer;
+    border: 1px black solid;
+    width: 200px;
+    height: 200px;
+    font-size: 90px;
+    text-align: center;
+    line-height: 180px;
+}
+#pve {
+    cursor: pointer;
+    border: 1px black solid;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    font-size: 90px;
+    text-align: center;
+    line-height: 180px;
+}
+#grotediv {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+    display: flex;
+     
+}
+#wrap {
+    margin-left: 100px;
+    display: block;
+    width: 200px;
+    height: 500px;
+}
+#start {
+    top: 240px;
+    left: 675px;
+    position: absolute;
+}
+#begin, #remise, #gewonnen {
+    font-size: 0px;
+    opacity: 0;
+    font-weight: bold;
+    top: 30px;
+    left: 10px;
+    position: absolute;
+}
+#popup {
+    opacity: 0.98;
+    z-index: 9999;
+    width: 370px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -185px;
+    display: none;
+    background-color: white;
+    line-height: 2;
+}
+#popupklein {
+    position: absolute;
+    z-index: 9998;
+    background-color: black;
+    opacity: 0.90;
+    height: 120vh;
+    width: 120vw;
+    margin: -9px 0 0 -9px;
+    display: none;
+    
+}
+body {
+    height: 100%;
+    overflow: hidden;
+}
+html {
+    height: 100%;
+}
+input {
+    height: 30px;
+}
+#popupbutton {
+    height: 35px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 300px;
+}
+#input_speler1 {
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 30px;
+}
+#input_speler2 {
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 110px;
+}
+#span_speler1 {
+    position: absolute;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#span_speler2 {
+    position: absolute;
+    height: 20px;
+    margin-top: 110px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#scoreboard {
+    opacity: 0.98;
+    z-index: 9999;
+    width: 370px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -335px;
+    display: none;
+    background-color: white;
+    line-height: 2;
+}
+#score_speler1 {
+    position: absolute;
+    height: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#score_speler2 {
+    position: absolute;
+    height: 20px;
+    margin-top: 110px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#volgende_btn {
+    height: 35px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 140px;
+}
+#reset {
+    height: 35px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 300px;
+}
+#wins_speler1 {
+    position: absolute;
+    height: 20px;
+    width: 72px;
+    margin-top: 40px;
+    margin-left: 126px;
+    font-weight: bold;
+    text-align: center;
+}
+#wins_speler2 {
+    position: absolute;
+    height: 20px;
+    width: 72px;
+    margin-top: 110px;
+    margin-left: 126px;
+    font-weight: bold;
+    text-align: center;
+}
+#loss_speler1 {
+    position: absolute;
+    height: 20px;
+    width: 57px;
+    margin-top: 40px;
+    margin-left: 221px;
+    font-weight: bold;
+    text-align: center;
+}
+#loss_speler2 {
+    position: absolute;
+    height: 20px;
+    width: 57px;
+    margin-top: 110px;
+    margin-left: 221px;
+    font-weight: bold;
+    text-align: center;
+}
+#remise_speler1 {
+    position: absolute;
+    height: 20px;
+    width: 55px;
+    margin-top: 40px;
+    margin-left: 300px;
+    font-weight: bold;
+    text-align: center;
+}
+#remise_speler2 {
+    position: absolute;
+    height: 20px;
+    width: 55px;
+    margin-top: 110px;
+    margin-left: 300px;
+    font-weight: bold;
+    text-align: center;
+}
+#wins {
+    position: absolute;
+    height: 20px;
+    margin-left: 126px;
+    font-weight: bold;
+}
+#loss {
+    position: absolute;
+    height: 20px;
+    margin-left: 220px;
+    font-weight: bold;
+}
+#remises {
+    position: absolute;
+    height: 20px;
+    margin-left: 300px;
+    font-weight: bold;
+}
+#versus {
+    width: 370px;
+    height: 517px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -790px;
+    display: none;
+    line-height: 2;
+}
+#speler1_titel {
+    position: absolute;
+    height: 100px;
+    font-size: 78px;
+    width: 370px;
+    line-height: 100px;
+    text-align: center;
+}
+#vs {
+    position: absolute;
+    height: 100px;
+    font-size: 100px;
+    width: 370px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 216px;
+}
+#speler2_titel {
+    position: absolute;
+    height: 100px;
+    font-size: 78px;
+    width: 370px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 416px;
+}
+#potje_titel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 500px;
+    margin-top: -380px;
+    margin-left: -400px;
+}
+#potje {
+    font-size: 90px;
+    position: absolute;
+}
+#potje_num {
+    position: absolute;
+    font-size: 90px;
+    text-align: right;
+    width: 200px;
+    margin-left: 290px;
+}
+#arrow_left {
+    display: none;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 237px;
+}
+#arrow_right {
+    display: none;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    margin-left: 570px;
+    margin-top: 236px;
+}
+/*#filter {*/
+/*    position: absolute;*/
+/*    z-index: 9999;*/
+/*    background-color: black;*/
+/*    opacity: 0;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    display: none;*/
+/*}*/
